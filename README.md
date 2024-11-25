@@ -1,3 +1,3 @@
-ft. aerodak
+ft. 
 
 ![ss2](https://i.imgur.com/iCCsuAB.jpeg)
