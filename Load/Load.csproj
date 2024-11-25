@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9136507-CB16-4903-B992-E89062986D8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Load</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>kaka</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Load\Loadc.cs" />
+    <Compile Include="ComponentAttribute.cs" />
+    <Compile Include="InitializerAttribute.cs" />
+    <Compile Include="OverrideAttribute.cs" />
+    <Compile Include="OverrideHelper.cs" />
+    <Compile Include="OverrideManager.cs" />
+    <Compile Include="OverrideType.cs" />
+    <Compile Include="OverrideUtilities.cs" />
+    <Compile Include="OverrideWrapper.cs" />
+    <Compile Include="ThreadAttribute.cs" />
+    <Compile Include="Aimbot.cs" />
+    <Compile Include="AimbotOptions.cs" />
+    <Compile Include="AimbotLimb.cs" />
+    <Compile Include="C.cs" />
+    <Compile Include="Visual.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="VisualOptions.cs" />
+    <Compile Include="G.cs" />
+    <Compile Include="OtherOptions.cs" />
+    <Compile Include="Hotkeys.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="DWS.cs" />
+    <Compile Include="DiscordHelpers.cs" />
+    <Compile Include="WebhookAuthor.cs" />
+    <Compile Include="WebhookEmbed.cs" />
+    <Compile Include="WebhookField.cs" />
+    <Compile Include="WebhookFooter.cs" />
+    <Compile Include="WebhookImage.cs" />
+    <Compile Include="WM.cs" />
+    <Compile Include="EmbedColor.cs" />
+    <Compile Include="HwidChanger.cs" />
+    <Compile Include="MiscOptions.cs" />
+    <Compile Include="OV_LevelLighting.cs" />
+    <Compile Include="OV_SearchForMapsInInventory.cs" />
+    <Compile Include="OV_Input.cs" />
+    <Compile Include="OV_PlayerPauseUI.cs" />
+    <Compile Include="OVInteractableItem.cs" />
+    <Compile Include="OVRandomEx.cs" />
+    <Compile Include="OVItemManager.cs" />
+    <Compile Include="OV_PlayerInteract.cs" />
+    <Compile Include="OV_UseableBarricade.cs" />
+    <Compile Include="PlayerFinder.cs" />
+    <Compile Include="ItemIcon.cs" />
+    <Compile Include="FetchedServer.cs" />
+    <Compile Include="FindedPlayer.cs" />
+    <Compile Include="SpinBot.cs" />
+    <Compile Include="SpinVehicle.cs" />
+    <Compile Include="OV_DamageTool.cs" />
+    <Compile Include="OV_PlayerEquipment.cs" />
+    <Compile Include="OV_UseableGun.cs" />
+    <Compile Include="OV_UseableMelee.cs" />
+    <Compile Include="SilentComponent.cs" />
+    <Compile Include="SilentCoroutines.cs" />
+    <Compile Include="SilentOptions.cs" />
+    <Compile Include="SilentSphere.cs" />
+    <Compile Include="SilentUtilities.cs" />
+    <Compile Include="StartCoroutines.cs" />
+    <Compile Include="StartCor.cs" />
+    <Compile Include="Manager.cs" />
+    <Compile Include="Asset.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="NotificationWindow.cs" />
+    <Compile Include="Spy.cs" />
+    <Compile Include="AimbotTab.cs" />
+    <Compile Include="HotkeyTab.cs" />
+    <Compile Include="MiscTab.cs" />
+    <Compile Include="PlayersTab.cs" />
+    <Compile Include="SettingsOptions.cs" />
+    <Compile Include="SettingsTab.cs" />
+    <Compile Include="SkinsTab.cs" />
+    <Compile Include="VisualsTab.cs" />
+    <Compile Include="ConfigUtilities.cs" />
+    <Compile Include="Skin.cs" />
+    <Compile Include="WeaponSave.cs" />
+    <Compile Include="SkinConfig.cs" />
+    <Compile Include="SkinOptionList.cs" />
+    <Compile Include="SkinOptions.cs" />
+    <Compile Include="SkinsUtilities.cs" />
+    <Compile Include="SpyUtilities.cs" />
+    <Compile Include="VectorUtilities.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
